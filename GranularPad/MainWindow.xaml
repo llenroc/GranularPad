@@ -1,0 +1,8 @@
+﻿<Window x:Class="GranularPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GranularPad"
+        TextBlock.FontFamily="Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif"
+        TextBlock.FontSize="16">
+    <ContentControl Content="{Binding}"/>
+</Window>

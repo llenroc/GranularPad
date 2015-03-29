@@ -1,0 +1,98 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid.Resources>
+        <Storyboard x:Key="BackEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <BackEase Amplitude="1" EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="CircleEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ElasticEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <ElasticEase Oscillations="3" Springiness="3" EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="ExponentialEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase Exponent="2" EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="PowerEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <PowerEase Power="2" EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="SineEaseStoryboard">
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="500">
+                <DoubleAnimation.EasingFunction>
+                    <SineEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Grid.Resources>
+    <StackPanel>
+        <Border Background="#08000000" HorizontalAlignment="Center" ClipToBounds="False" Margin="5" CornerRadius="30">
+            <Canvas Width="560" Height="60" ClipToBounds="False">
+                <Border x:Name="border1" CornerRadius="30" Width="60" Height="60" Background="#FF03A9F4"/>
+            </Canvas>
+        </Border>
+        <WrapPanel>
+            <Button Content="BackEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource BackEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Content="CircleEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource CircleEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Content="ElasticEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource ElasticEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Content="ExponentialEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource ExponentialEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Content="PowerEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource PowerEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+            <Button Content="SineEase" Padding="20,10" Margin="5">
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard Storyboard="{StaticResource SineEaseStoryboard}"/>
+                    </EventTrigger>
+                </Button.Triggers>
+            </Button>
+        </WrapPanel>
+    </StackPanel>
+</Grid>

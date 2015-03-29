@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BED392F-9FA1-4531-BA58-D9E41507506D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GranularPad</RootNamespace>
+    <AssemblyName>GranularPad</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>True</NoStdLib>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoStdLib>True</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GranularPad.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GranularPad.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\GranularPad\App.xaml.cs">
+      <Link>App.xaml.cs</Link>
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\GranularPad\MainWindow.xaml.cs">
+      <Link>MainWindow.xaml.cs</Link>
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\AnimationSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\AnimationSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\Builder.cs">
+      <Link>ViewModelBuilders\Builder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\ControlsSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\ControlsSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\FrameworkSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\FrameworkSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\MainViewModelBuilder.cs">
+      <Link>ViewModelBuilders\MainViewModelBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\OthersSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\OthersSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\PanelsSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\PanelsSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModelBuilders\StylesSnippetsGroupBuilder.cs">
+      <Link>ViewModelBuilders\StylesSnippetsGroupBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModels\MainViewModel.cs">
+      <Link>ViewModels\MainViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModels\SnippetsGroupViewModel.cs">
+      <Link>ViewModels\SnippetsGroupViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\ViewModels\SnippetViewModel.cs">
+      <Link>ViewModels\SnippetViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\GranularPad\Views\MainView.xaml.cs">
+      <Link>Views\MainView.xaml.cs</Link>
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\GranularPad\Views\SnippetsGroupView.xaml.cs">
+      <Link>Views\SnippetsGroupView.xaml.cs</Link>
+      <DependentUpon>SnippetsGroupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\GranularPad\Views\SnippetView.xaml.cs">
+      <Link>Views\SnippetView.xaml.cs</Link>
+      <DependentUpon>SnippetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Compatibility\ExceptionExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <GranularApplicationDefinition Include="..\GranularPad\App.xaml">
+      <Link>App.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularApplicationDefinition>
+    <GranularPage Include="..\GranularPad\MainWindow.xaml">
+      <Link>MainWindow.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularPage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <GranularPage Include="..\GranularPad\DataTemplates.xaml">
+      <Link>DataTemplates.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularPage>
+    <GranularPage Include="..\GranularPad\Views\MainView.xaml">
+      <Link>Views\MainView.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularPage>
+    <GranularPage Include="..\GranularPad\Views\SnippetsGroupView.xaml">
+      <Link>Views\SnippetsGroupView.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularPage>
+    <GranularPage Include="..\GranularPad\Views\SnippetView.xaml">
+      <Link>Views\SnippetView.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </GranularPage>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Animation.Compose.xaml">
+      <Link>Snippets\Animation.Compose.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Animation.EasingFunctions.xaml">
+      <Link>Snippets\Animation.EasingFunctions.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Animation.RepeatForever.xaml">
+      <Link>Snippets\Animation.RepeatForever.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Animation.UsingKeyFrames.xaml">
+      <Link>Snippets\Animation.UsingKeyFrames.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Controls.Popup.xaml">
+      <Link>Snippets\Controls.Popup.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Default.xaml">
+      <Link>Snippets\Default.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Framework.Binding.Modes.xaml">
+      <Link>Snippets\Framework.Binding.Modes.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Framework.Binding.RelativeSource.xaml">
+      <Link>Snippets\Framework.Binding.RelativeSource.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Framework.Binding.UpdateSourceTrigger.xaml">
+      <Link>Snippets\Framework.Binding.UpdateSourceTrigger.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Framework.Resources.xaml">
+      <Link>Snippets\Framework.Resources.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Media.GradientBrush.xaml">
+      <Link>Snippets\Media.GradientBrush.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Panels.Canvas.xaml">
+      <Link>Snippets\Panels.Canvas.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Panels.DockPanel.xaml">
+      <Link>Snippets\Panels.DockPanel.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Panels.Grid.xaml">
+      <Link>Snippets\Panels.Grid.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Panels.StackPanel.xaml">
+      <Link>Snippets\Panels.StackPanel.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Panels.WrapPanel.xaml">
+      <Link>Snippets\Panels.WrapPanel.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Styles.ItemsControl.xaml">
+      <Link>Snippets\Styles.ItemsControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Templates.ControlTemplate.xaml">
+      <Link>Snippets\Templates.ControlTemplate.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Templates.DataTemplate.xaml">
+      <Link>Snippets\Templates.DataTemplate.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Granular.Common">
+      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Granular.Host">
+      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Host.dll</HintPath>
+    </Reference>
+    <Reference Include="Granular.Presentation">
+      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Granular.Presentation.Generic">
+      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Presentation.Generic.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>$(SolutionDir)packages\Saltarelle.Runtime.2.6.2\tools\Assemblies\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Saltarelle.Linq">
+      <HintPath>..\packages\Saltarelle.Linq.2.4.0\lib\Saltarelle.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Saltarelle.Web">
+      <HintPath>..\packages\Saltarelle.Web.3.1.0\lib\Saltarelle.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="!Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
+  <Import Project="$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets" Condition="Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
+  <Import Project="..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets" Condition="Exists('..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.0\build\Granular.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetDir)$(TargetName).js" "$(SolutionDir)Output.Web\"
+copy /Y "$(ProjectDir)App.html" "$(SolutionDir)Output.Web\$(TargetName).html"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
