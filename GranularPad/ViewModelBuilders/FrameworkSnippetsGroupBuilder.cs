@@ -13,10 +13,10 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Framework", new[]
             {
-                new SnippetViewModel("Resources", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Framework.Resources.xaml")),
-                new SnippetViewModel("Binding Modes", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Framework.Binding.Modes.xaml")),
-                new SnippetViewModel("Binding RelativeSource", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Framework.Binding.RelativeSource.xaml")),
-                new SnippetViewModel("Binding UpdateTrigger", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Framework.Binding.UpdateSourceTrigger.xaml")),
+                new SnippetViewModel("Resources", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Resources.xaml"))),
+                new SnippetViewModel("Binding Modes", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.Modes.xaml"))),
+                new SnippetViewModel("Binding RelativeSource", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.RelativeSource.xaml"))),
+                new SnippetViewModel("Binding UpdateTrigger", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.UpdateSourceTrigger.xaml"))),
             });
         }
     }

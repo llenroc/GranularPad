@@ -28,7 +28,7 @@ namespace GranularPad.ViewModelBuilders
         {
             return new MainViewModel(groupsBuilders.Select(groupBuilder => groupBuilder.Build()).ToArray())
             {
-                TextContent = EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Default.xaml")
+                TextContent = Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Default.xaml"))
             };
         }
     }

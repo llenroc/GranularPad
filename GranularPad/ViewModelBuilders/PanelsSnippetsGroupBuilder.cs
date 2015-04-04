@@ -13,11 +13,11 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Panels", new []
             {
-                new SnippetViewModel("StackPanel", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Panels.StackPanel.xaml")),
-                new SnippetViewModel("GridPanel", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Panels.Grid.xaml")),
-                new SnippetViewModel("DockPanel", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Panels.DockPanel.xaml")),
-                new SnippetViewModel("WrapPanel", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Panels.WrapPanel.xaml")),
-                new SnippetViewModel("Canvas", EmbeddedResourceLoader.LoadResourceString(@"/GranularPad;component/Snippets/Panels.Canvas.xaml")),
+                new SnippetViewModel("StackPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.StackPanel.xaml"))),
+                new SnippetViewModel("GridPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.Grid.xaml"))),
+                new SnippetViewModel("DockPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.DockPanel.xaml"))),
+                new SnippetViewModel("WrapPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.WrapPanel.xaml"))),
+                new SnippetViewModel("Canvas", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.Canvas.xaml"))),
             });
         }
     }

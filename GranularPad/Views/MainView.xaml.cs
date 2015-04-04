@@ -156,7 +156,6 @@ namespace GranularPad.Views
         {
             if (!errorPosition.IsEmpty)
             {
-                Console.WriteLine(String.Format("Setting caret index: {0}", errorPosition));
                 textBox.Focus();
                 textBox.CaretIndex = textBox.GetCharacterIndexFromLineIndex((int)errorPosition.Y) + (int)errorPosition.X;
 
