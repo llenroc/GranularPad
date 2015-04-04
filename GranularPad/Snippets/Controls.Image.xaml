@@ -1,0 +1,55 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Transparent">
+    <WrapPanel Orientation="Vertical">
+        <StackPanel Margin="5">
+            <TextBlock Text="Stretch: None"/>
+            <Border Background="#10000000" Width="200" Height="50">
+                <Image Source="/GranularPad;component/Resources/SampleImage.png" Stretch="None"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Margin="5">
+            <TextBlock Text="Stretch: Fill"/>
+            <Border Background="#10000000" Width="200" Height="50">
+                <Image Source="/GranularPad;component/Resources/SampleImage.png" Stretch="Fill"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Margin="5">
+            <TextBlock Text="Stretch: Uniform"/>
+            <Border Background="#10000000" Width="200" Height="50">
+                <Image Source="/GranularPad;component/Resources/SampleImage.png" Stretch="Uniform"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Margin="5">
+            <TextBlock Text="Stretch: UniformToFill"/>
+            <Border Background="#10000000" Width="200" Height="50">
+                <Image Source="/GranularPad;component/Resources/SampleImage.png" Stretch="UniformToFill"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Margin="5">
+            <TextBlock Text="SourceRect: 5,5,100,15"/>
+            <Border Background="#10000000" Width="200" Height="50">
+                <Image Stretch="Uniform">
+                    <Image.Source>
+                        <BitmapImage UriSource="/GranularPad;component/Resources/SampleImage.png" SourceRect="5,5,100,15"/>
+                    </Image.Source>
+                </Image>
+            </Border>
+        </StackPanel>
+        <StackPanel Margin="5">
+            <TextBlock Text="http://lorempixel.com/200/50/"/>
+            <Image Source="http://lorempixel.com/200/50/" Stretch="None"/>
+        </StackPanel>
+
+        <StackPanel Margin="5">
+            <TextBlock Text="http://localhost/fail"/>
+            <TextBlock x:Name="imageFailedTextBlock" Text="Image.ImageFailed raised" Foreground="Red" Visibility="Collapsed"/>
+            <Image Source="http://localhost/fail">
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Image.ImageFailed">
+                        <Setter TargetName="imageFailedTextBlock" Property="Visibility" Value="Visible"/>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+        </StackPanel>
+    </WrapPanel>
+</Grid>
