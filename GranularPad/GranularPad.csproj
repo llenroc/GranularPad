@@ -50,17 +50,17 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Granular.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Granular.0.1.0\lib\Granular.Common.dll</HintPath>
+    <Reference Include="Granular.Common">
+      <HintPath>..\packages\Granular.0.1.1\lib\Granular.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Granular.Host.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Granular.0.1.0\lib\Granular.Host.Wpf.dll</HintPath>
+    <Reference Include="Granular.Host.Wpf">
+      <HintPath>..\packages\Granular.0.1.1\lib\Granular.Host.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Granular.Presentation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Granular.0.1.0\lib\Granular.Presentation.dll</HintPath>
+    <Reference Include="Granular.Presentation">
+      <HintPath>..\packages\Granular.0.1.1\lib\Granular.Presentation.dll</HintPath>
     </Reference>
-    <Reference Include="Granular.Presentation.Generic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Granular.0.1.0\lib\Granular.Presentation.Generic.dll</HintPath>
+    <Reference Include="Granular.Presentation.Generic">
+      <HintPath>..\packages\Granular.0.1.1\lib\Granular.Presentation.Generic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -265,12 +265,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\Granular.0.1.0\build\Granular.targets" Condition="Exists('..\packages\Granular.0.1.0\build\Granular.targets')" />
+  <Import Project="..\packages\Granular.0.1.1\build\Granular.targets" Condition="Exists('..\packages\Granular.0.1.1\build\Granular.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Granular.0.1.0\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.0\build\Granular.targets'))" />
+    <Error Condition="!Exists('..\packages\Granular.0.1.1\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.1\build\Granular.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

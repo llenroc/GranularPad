@@ -281,16 +281,16 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Granular.Common">
-      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Common.dll</HintPath>
+      <HintPath>..\packages\Saltarelle.Granular.0.1.1\lib\Granular.Common.dll</HintPath>
     </Reference>
     <Reference Include="Granular.Host">
-      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Host.dll</HintPath>
+      <HintPath>..\packages\Saltarelle.Granular.0.1.1\lib\Granular.Host.dll</HintPath>
     </Reference>
     <Reference Include="Granular.Presentation">
-      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Presentation.dll</HintPath>
+      <HintPath>..\packages\Saltarelle.Granular.0.1.1\lib\Granular.Presentation.dll</HintPath>
     </Reference>
     <Reference Include="Granular.Presentation.Generic">
-      <HintPath>..\packages\Saltarelle.Granular.0.1.0\lib\Granular.Presentation.Generic.dll</HintPath>
+      <HintPath>..\packages\Saltarelle.Granular.0.1.1\lib\Granular.Presentation.Generic.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>$(SolutionDir)packages\Saltarelle.Runtime.2.6.2\tools\Assemblies\mscorlib.dll</HintPath>
@@ -304,12 +304,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="!Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
   <Import Project="$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets" Condition="Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
-  <Import Project="..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets" Condition="Exists('..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets')" />
+  <Import Project="..\packages\Saltarelle.Granular.0.1.1\build\Granular.targets" Condition="Exists('..\packages\Saltarelle.Granular.0.1.1\build\Granular.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Saltarelle.Granular.0.1.0\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.0\build\Granular.targets'))" />
+    <Error Condition="!Exists('..\packages\Saltarelle.Granular.0.1.1\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.1\build\Granular.targets'))" />
   </Target>
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y "$(TargetDir)$(TargetName).js" "$(SolutionDir)Output.Web\"
