@@ -20,7 +20,7 @@
                                     <VisualStateGroup.Transitions>
                                         <VisualTransition To="MouseOver" From="Normal">
                                             <Storyboard>
-                                                <ColorAnimation Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Duration="0:0:0.1" To="#40FFFFFF" />
+                                                <ColorAnimation Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Duration="0" To="#40FFFFFF" />
                                             </Storyboard>
                                         </VisualTransition>
                                         <VisualTransition To="MouseOver" From="Pressed">
