@@ -38,18 +38,16 @@
             </RadialGradientBrush.GradientStops>
         </RadialGradientBrush>
     </Grid.Resources>
-    <StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Border Width="160" Height="160" Margin="10" BorderThickness="20"
-                    Background="{StaticResource LinearGradientBrush1}"
-                    BorderBrush="{StaticResource LinearGradientBrush2}"/>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Border Width="160" Height="160" Margin="10" BorderThickness="20"
+                Background="{StaticResource LinearGradientBrush1}"
+                BorderBrush="{StaticResource LinearGradientBrush2}"/>
 
-            <Border Width="160" Height="160" Margin="10" BorderThickness="20"
-                    Background="{StaticResource LinearGradientBrush3}"
-                    BorderBrush="{StaticResource LinearGradientBrush4}"/>
+        <Border Width="160" Height="160" Margin="10" BorderThickness="20"
+                Background="{StaticResource LinearGradientBrush3}"
+                BorderBrush="{StaticResource LinearGradientBrush4}"/>
 
-            <Border Width="160" Height="160" Margin="10" CornerRadius="80"
-                    Background="{StaticResource RadialGradientBrush1}"/>
-        </StackPanel>
+        <Border Width="160" Height="160" Margin="10" CornerRadius="80"
+                Background="{StaticResource RadialGradientBrush1}"/>
     </StackPanel>
 </Grid>

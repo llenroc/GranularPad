@@ -10,7 +10,7 @@
             <DoubleAnimation Duration="0:0:1.0" Storyboard.TargetName="border6" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=3.0}"/>
         </Storyboard>
     </Grid.Resources>
-    <StackPanel>
+    <StackPanel VerticalAlignment="Center">
         <Border HorizontalAlignment="Center" Margin="5">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">

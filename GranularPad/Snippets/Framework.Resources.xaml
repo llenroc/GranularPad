@@ -34,7 +34,7 @@
         </ControlTemplate>
     </Grid.Resources>
 
-    <StackPanel HorizontalAlignment="Center">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBlock Style="{StaticResource StaticTextBlockStyle}"/>
         <TextBlock Style="{StaticResource DynamicTextBlockStyle}"/>
 

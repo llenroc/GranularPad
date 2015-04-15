@@ -9,7 +9,7 @@
         </DataTemplate>
     </Grid.Resources>
 
-    <StackPanel Margin="20">
+    <StackPanel Margin="20" VerticalAlignment="Center">
         <TextBlock Text="ContentControl:"/>
         <ContentControl Content="ContentControl Item"/>
 

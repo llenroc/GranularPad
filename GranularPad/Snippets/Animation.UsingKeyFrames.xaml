@@ -35,7 +35,7 @@
             </ColorAnimationUsingKeyFrames>
         </Storyboard>
     </Grid.Resources>
-    <StackPanel>
+    <StackPanel VerticalAlignment="Center">
         <Border Background="#08000000" HorizontalAlignment="Center" ClipToBounds="False" Margin="5" CornerRadius="30">
             <Canvas Width="560" Height="60" ClipToBounds="False">
                 <Border x:Name="border1" CornerRadius="30" Width="60" Height="60">

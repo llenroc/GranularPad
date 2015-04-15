@@ -1,6 +1,6 @@
 ﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Transparent">
-    <WrapPanel Orientation="Vertical">
+    <WrapPanel Orientation="Vertical" HorizontalAlignment="Center">
         <StackPanel Margin="5">
             <TextBlock Text="Stretch: None"/>
             <Border Background="#10000000" Width="200" Height="50">

@@ -147,7 +147,7 @@
         <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ButtonBaseStyle}"/>
     </Grid.Resources>
 
-    <StackPanel Width="200">
+    <StackPanel Width="200" VerticalAlignment="Center">
         <TextBlock Text="Aero Button style" HorizontalAlignment="Center"/>
         <Button Margin="10" Padding="10" Content="Button 1"/>
         <Button Margin="10" Padding="10" Content="Button 2"/>

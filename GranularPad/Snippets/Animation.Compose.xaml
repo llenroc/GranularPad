@@ -24,14 +24,14 @@
         </Storyboard>
     </Grid.Resources>
 
-    <StackPanel>
+    <StackPanel VerticalAlignment="Center">
         <Border Background="#08000000" HorizontalAlignment="Center" Margin="5" CornerRadius="30">
             <Canvas Width="760" Height="60">
                 <Border x:Name="border1" CornerRadius="30" Width="60" Height="60" Canvas.Left="0" Background="#FF12C700"/>
             </Canvas>
         </Border>
-        <WrapPanel>
-            <ToggleButton Content="Add / Remove oscillation of 400px" Padding="20,10" Margin="5" HorizontalAlignment="Center">
+        <WrapPanel HorizontalAlignment="Center">
+            <ToggleButton Content="Add / Remove an oscillation of 400px" Padding="20,10" Margin="5" HorizontalAlignment="Center">
                 <ToggleButton.Triggers>
                     <EventTrigger RoutedEvent="ToggleButton.Checked">
                         <BeginStoryboard x:Name="beginStoryboard1" Storyboard="{StaticResource Storyboard1}" HandoffBehavior="Compose"/>

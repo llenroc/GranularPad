@@ -32,7 +32,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Grid Background="#FFF0FFFF">
+                <Grid Background="#FFEDF6FC">
                     <Decorator x:Name="contentPresenter"/>
                     <Border x:Name="contentPresenterOverlay" Background="#20000000" Opacity="0" IsHitTestVisible="False"/>
                     <Border x:Name="errorPanel" VerticalAlignment="Bottom" Background="#FFFF7070" CornerRadius="2" Visibility="Collapsed" MouseDown="OnErrorPanelMouseDown">
