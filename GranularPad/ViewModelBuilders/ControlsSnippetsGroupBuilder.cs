@@ -13,6 +13,7 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Controls", new []
             {
+                new SnippetViewModel("Buttons", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Buttons.xaml"))),
                 new SnippetViewModel("Image", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Image.xaml"))),
                 new SnippetViewModel("Popup", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Popup.xaml"))),
             });
