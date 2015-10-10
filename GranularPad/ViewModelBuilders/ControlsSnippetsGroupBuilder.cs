@@ -16,6 +16,7 @@ namespace GranularPad.ViewModelBuilders
                 new SnippetViewModel("Buttons", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Buttons.xaml"))),
                 new SnippetViewModel("Expander", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Expander.xaml"))),
                 new SnippetViewModel("Image", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Image.xaml"))),
+                new SnippetViewModel("ListBox", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.ListBox.xaml"))),
                 new SnippetViewModel("Popup", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.Popup.xaml"))),
                 new SnippetViewModel("ProgressBar", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.ProgressBar.xaml"))),
                 new SnippetViewModel("TextBox", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Controls.TextBox.xaml"))),

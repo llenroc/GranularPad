@@ -1,0 +1,36 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Transparent">
+    
+    <StackPanel VerticalAlignment="Center">
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Width="200" Margin="5">
+                <TextBlock Text="SelectionMode: Extended" Margin="5"/>
+                <ListBox SelectionMode="Extended">
+                    <ListBoxItem Content="Item1"/>
+                    <ListBoxItem Content="Item2"/>
+                    <ListBoxItem Content="Item3"/>
+                    <ListBoxItem Content="Item4"/>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Width="200" Margin="5">
+                <TextBlock Text="SelectionMode: Single" Margin="5"/>
+                <ListBox SelectionMode="Single">
+                    <ListBoxItem Content="Item1"/>
+                    <ListBoxItem Content="Item2"/>
+                    <ListBoxItem Content="Item3"/>
+                    <ListBoxItem Content="Item4"/>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Width="200" Margin="5">
+                <TextBlock Text="SelectionMode: Multiple" Margin="5"/>
+                <ListBox SelectionMode="Multiple">
+                    <ListBoxItem Content="Item1"/>
+                    <ListBoxItem Content="Item2"/>
+                    <ListBoxItem Content="Item3"/>
+                    <ListBoxItem Content="Item4"/>
+                </ListBox>
+            </StackPanel>
+        </WrapPanel>
+        <TextBlock Text="Use the Arrows / Space / mouse, with Ctrl / Shift modifiers" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Grid>

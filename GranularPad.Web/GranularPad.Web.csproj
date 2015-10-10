@@ -335,6 +335,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Controls.ListBox.xaml">
+      <Link>Snippets\Controls.ListBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\GranularPad\Snippets\Framework.KeyboardNavigation.xaml">
       <Link>Snippets\Framework.KeyboardNavigation.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
