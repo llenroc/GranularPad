@@ -330,6 +330,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Controls.Expander.xaml">
+      <Link>Snippets\Controls.Expander.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\GranularPad\Snippets\Framework.KeyboardNavigation.xaml">
       <Link>Snippets\Framework.KeyboardNavigation.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
