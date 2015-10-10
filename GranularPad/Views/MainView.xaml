@@ -33,7 +33,10 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid Background="#FFEDF6FC">
-                    <Decorator x:Name="contentPresenter"/>
+                    <Decorator x:Name="contentPresenter"
+                               KeyboardNavigation.TabNavigation="Contained"
+                               KeyboardNavigation.ControlTabNavigation="Contained"
+                               KeyboardNavigation.DirectionalNavigation="Contained"/>
                     <Border x:Name="contentPresenterOverlay" Background="#20000000" Opacity="0" IsHitTestVisible="False"/>
                     <Border x:Name="errorPanel" VerticalAlignment="Bottom" Background="#FFFF7070" CornerRadius="2" Visibility="Collapsed" MouseDown="OnErrorPanelMouseDown">
                         <TextBlock x:Name="errorTextBlock" Foreground="White" Margin="8,2" />
