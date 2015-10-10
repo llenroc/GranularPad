@@ -17,6 +17,7 @@ namespace GranularPad.ViewModelBuilders
                 new SnippetViewModel("Binding Modes", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.Modes.xaml"))),
                 new SnippetViewModel("Binding RelativeSource", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.RelativeSource.xaml"))),
                 new SnippetViewModel("Binding UpdateTrigger", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.UpdateSourceTrigger.xaml"))),
+                new SnippetViewModel("KeyboardNavigation", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.KeyboardNavigation.xaml"))),
             });
         }
     }
