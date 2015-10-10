@@ -116,10 +116,10 @@ namespace GranularPad.Views
             errorPanel.Visibility = Visibility.Visible;
             errorPanel.UpdateLayout();
 
-            DoubleAnimation heightAnimation = new DoubleAnimation { From = 0, To = errorPanel.ActualHeight, Duration = Duration.FromTimeSpan(TimeSpan.FromSeconds(0.3)), EasingFunction = new ExponentialEase(), FillBehavior = FillBehavior.Stop };
+            DoubleAnimation heightAnimation = new DoubleAnimation { From = 0, To = errorPanel.ActualHeight, Duration = new Duration(TimeSpan.FromSeconds(0.3)), EasingFunction = new ExponentialEase(), FillBehavior = FillBehavior.Stop };
             errorPanel.BeginAnimation(FrameworkElement.HeightProperty, heightAnimation);
 
-            DoubleAnimation opacityAnimation = new DoubleAnimation { From = 0, To = 1, Duration = Duration.FromTimeSpan(TimeSpan.FromSeconds(0.3)) };
+            DoubleAnimation opacityAnimation = new DoubleAnimation { From = 0, To = 1, Duration = new Duration(TimeSpan.FromSeconds(0.3)) };
             errorPanel.BeginAnimation(UIElement.OpacityProperty, opacityAnimation);
         }
 
@@ -136,7 +136,7 @@ namespace GranularPad.Views
             }
 
             isContentPresenterOverlayVisibile = true;
-            DoubleAnimation opacityAnimation = new DoubleAnimation { To = 1, Duration = Duration.FromTimeSpan(TimeSpan.FromSeconds(0.3)) };
+            DoubleAnimation opacityAnimation = new DoubleAnimation { To = 1, Duration = new Duration(TimeSpan.FromSeconds(0.3)) };
             contentPresenterOverlay.BeginAnimation(UIElement.OpacityProperty, opacityAnimation);
         }
 
@@ -148,7 +148,7 @@ namespace GranularPad.Views
             }
 
             isContentPresenterOverlayVisibile = false;
-            DoubleAnimation opacityAnimation = new DoubleAnimation { To = 0, Duration = Duration.FromTimeSpan(TimeSpan.FromSeconds(0.3)) };
+            DoubleAnimation opacityAnimation = new DoubleAnimation { To = 0, Duration = new Duration(TimeSpan.FromSeconds(0.3)) };
             contentPresenterOverlay.BeginAnimation(UIElement.OpacityProperty, opacityAnimation);
         }
 
