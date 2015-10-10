@@ -4,21 +4,21 @@
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimation Duration="0:0:1" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" By="400" RepeatBehavior="Forever" AutoReverse="True">
                 <DoubleAnimation.EasingFunction>
-                    <PowerEase />
+                    <PowerEase EasingMode="EaseIn"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Key="Storyboard2">
             <DoubleAnimation Duration="0:0:1" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" By="200" RepeatBehavior="Forever" AutoReverse="True">
                 <DoubleAnimation.EasingFunction>
-                    <PowerEase />
+                    <PowerEase EasingMode="EaseIn"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Key="Storyboard3">
             <DoubleAnimation Duration="0:0:1" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Left)" By="100" RepeatBehavior="Forever" AutoReverse="True">
                 <DoubleAnimation.EasingFunction>
-                    <PowerEase />
+                    <PowerEase EasingMode="EaseIn"/>
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>

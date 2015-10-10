@@ -2,12 +2,12 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Grid.Resources>
         <Storyboard x:Key="RepeatForeverStoryboard">
-            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.0}"/>
-            <DoubleAnimation Duration="0:0:0.6" Storyboard.TargetName="border2" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.2}"/>
-            <DoubleAnimation Duration="0:0:0.7" Storyboard.TargetName="border3" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.4}"/>
-            <DoubleAnimation Duration="0:0:0.8" Storyboard.TargetName="border4" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.6}"/>
-            <DoubleAnimation Duration="0:0:0.9" Storyboard.TargetName="border5" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.8}"/>
-            <DoubleAnimation Duration="0:0:1.0" Storyboard.TargetName="border6" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=3.0}"/>
+            <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetName="border1" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.0, EasingMode=EaseIn}"/>
+            <DoubleAnimation Duration="0:0:0.6" Storyboard.TargetName="border2" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.2, EasingMode=EaseIn}"/>
+            <DoubleAnimation Duration="0:0:0.7" Storyboard.TargetName="border3" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.4, EasingMode=EaseIn}"/>
+            <DoubleAnimation Duration="0:0:0.8" Storyboard.TargetName="border4" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.6, EasingMode=EaseIn}"/>
+            <DoubleAnimation Duration="0:0:0.9" Storyboard.TargetName="border5" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=2.8, EasingMode=EaseIn}"/>
+            <DoubleAnimation Duration="0:0:1.0" Storyboard.TargetName="border6" Storyboard.TargetProperty="(Canvas.Top)" To="200" RepeatBehavior="Forever" AutoReverse="True" EasingFunction="{PowerEase Power=3.0, EasingMode=EaseIn}"/>
         </Storyboard>
     </Grid.Resources>
     <StackPanel VerticalAlignment="Center">

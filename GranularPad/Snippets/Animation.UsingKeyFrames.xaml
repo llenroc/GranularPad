@@ -13,7 +13,7 @@
                 <DiscreteDoubleKeyFrame KeyTime="0:0:4.0" Value="0"/>
                 <EasingDoubleKeyFrame   KeyTime="0:0:5.5" Value="500">
                     <EasingDoubleKeyFrame.EasingFunction>
-                        <ElasticEase />
+                        <ElasticEase EasingMode="EaseIn"/>
                     </EasingDoubleKeyFrame.EasingFunction>
                 </EasingDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
@@ -29,7 +29,7 @@
                 <DiscreteColorKeyFrame KeyTime="0:0:4.0" Value="#FFFF5177"/>
                 <EasingColorKeyFrame   KeyTime="0:0:5.5" Value="#FFFFB300">
                     <EasingColorKeyFrame.EasingFunction>
-                        <ElasticEase />
+                        <ElasticEase EasingMode="EaseIn"/>
                     </EasingColorKeyFrame.EasingFunction>
                 </EasingColorKeyFrame>
             </ColorAnimationUsingKeyFrames>

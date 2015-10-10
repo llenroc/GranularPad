@@ -116,7 +116,7 @@ namespace GranularPad.Views
             errorPanel.Visibility = Visibility.Visible;
             errorPanel.UpdateLayout();
 
-            DoubleAnimation heightAnimation = new DoubleAnimation { From = 0, To = errorPanel.ActualHeight, Duration = new Duration(TimeSpan.FromSeconds(0.3)), EasingFunction = new ExponentialEase(), FillBehavior = FillBehavior.Stop };
+            DoubleAnimation heightAnimation = new DoubleAnimation { From = 0, To = errorPanel.ActualHeight, Duration = new Duration(TimeSpan.FromSeconds(0.3)), EasingFunction = new ExponentialEase { EasingMode = EasingMode.EaseIn }, FillBehavior = FillBehavior.Stop };
             errorPanel.BeginAnimation(FrameworkElement.HeightProperty, heightAnimation);
 
             DoubleAnimation opacityAnimation = new DoubleAnimation { From = 0, To = 1, Duration = new Duration(TimeSpan.FromSeconds(0.3)) };
