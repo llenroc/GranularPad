@@ -34,6 +34,7 @@
                 </Grid.RowDefinitions>
                 <Grid Background="#FFEDF6FC">
                     <Decorator x:Name="contentPresenter"
+                               ClipToBounds="True"
                                KeyboardNavigation.TabNavigation="Contained"
                                KeyboardNavigation.ControlTabNavigation="Contained"
                                KeyboardNavigation.DirectionalNavigation="Contained"/>
