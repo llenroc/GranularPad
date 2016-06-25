@@ -1,0 +1,73 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Angle" Margin="5"/>
+            <ScrollBar x:Name="scrollBarRotateAngle" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Minimum="-180" Maximum="180" SmallChange="1" LargeChange="10" Margin="5"/>
+            <TextBlock Grid.Row="1" Text="Scale" Margin="5"/>
+            <ScrollBar x:Name="scrollBarScaleX" Grid.Row="1" Grid.Column="1" Value="1" Minimum="-4" Maximum="4" SmallChange="0.1" LargeChange="1" Margin="5"/>
+            <ScrollBar x:Name="scrollBarScaleY" Grid.Row="1" Grid.Column="2" Value="1" Minimum="-4" Maximum="4" SmallChange="0.1" LargeChange="1" Margin="5"/>
+            <TextBlock Grid.Row="2" Text="Skew" Margin="5"/>
+            <ScrollBar x:Name="scrollBarSkewX" Grid.Row="2" Grid.Column="1" Minimum="-60" Maximum="60" SmallChange="1" LargeChange="10" Margin="5"/>
+            <ScrollBar x:Name="scrollBarSkewY" Grid.Row="2" Grid.Column="2" Minimum="-60" Maximum="60" SmallChange="1" LargeChange="10" Margin="5"/>
+        </Grid>
+
+        <StackPanel Orientation="Horizontal">
+            <Decorator Width="200" Height="200">
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="RenderTransform" HorizontalAlignment="Center" Margin="5"/>
+                    <Border BorderThickness="2" BorderBrush="#FF03A9F4" HorizontalAlignment="Center">
+                        <Decorator RenderTransformOrigin="0.5,0.5">
+                            <Decorator.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="{Binding Value, ElementName=scrollBarScaleX}" ScaleY="{Binding Value, ElementName=scrollBarScaleY}"/>
+                                    <SkewTransform AngleX="{Binding Value, ElementName=scrollBarSkewX}" AngleY="{Binding Value, ElementName=scrollBarSkewY}"/>
+                                    <RotateTransform Angle="{Binding Value, ElementName=scrollBarRotateAngle}"/>
+                                </TransformGroup>
+                            </Decorator.RenderTransform>
+                            <UniformGrid Width="100" Height="100" Margin="-5">
+                                <Button Content="A" Margin="5"/>
+                                <Button Content="B" Margin="5"/>
+                                <Button Content="C" Margin="5"/>
+                                <Button Content="D" Margin="5"/>
+                            </UniformGrid>
+                        </Decorator>
+                    </Border>
+                </StackPanel>
+            </Decorator>
+
+            <Decorator Width="200" Height="200">
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="LayoutTransform" HorizontalAlignment="Center" Margin="5"/>
+                    <Border BorderThickness="2" BorderBrush="#FF03A9F4" HorizontalAlignment="Center">
+                        <Decorator>
+                            <Decorator.LayoutTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="{Binding Value, ElementName=scrollBarScaleX}" ScaleY="{Binding Value, ElementName=scrollBarScaleY}"/>
+                                    <SkewTransform AngleX="{Binding Value, ElementName=scrollBarSkewX}" AngleY="{Binding Value, ElementName=scrollBarSkewY}"/>
+                                    <RotateTransform Angle="{Binding Value, ElementName=scrollBarRotateAngle}"/>
+                                </TransformGroup>
+                            </Decorator.LayoutTransform>
+                            <UniformGrid Width="100" Height="100" Margin="-5">
+                                <Button Content="A" Margin="5"/>
+                                <Button Content="B" Margin="5"/>
+                                <Button Content="C" Margin="5"/>
+                                <Button Content="D" Margin="5"/>
+                            </UniformGrid>
+                        </Decorator>
+                    </Border>
+                </StackPanel>
+            </Decorator>
+        </StackPanel>
+    </StackPanel>
+</Grid>

@@ -346,6 +346,31 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Granular\Granular.Common.Web\Granular.Common.Web.csproj">
+      <Project>{f79ee440-e0c4-43a9-8ddc-33d9ed53e570}</Project>
+      <Name>Granular.Common.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Granular\Granular.Host.Web\Granular.Host.Web.csproj">
+      <Project>{e3353831-9653-4f3a-b0ff-56d179235a43}</Project>
+      <Name>Granular.Host.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Granular\Granular.Presentation.Generic.Web\Granular.Presentation.Generic.Web.csproj">
+      <Project>{21053c1f-6c25-4119-8fd6-0fa73332168e}</Project>
+      <Name>Granular.Presentation.Generic.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Granular\Granular.Presentation.Web\Granular.Presentation.Web.csproj">
+      <Project>{dd58ec80-2c0d-45f3-9cc9-5b1783193306}</Project>
+      <Name>Granular.Presentation.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\GranularPad\Snippets\Framework.Transforms.xaml">
+      <Link>Snippets\Framework.Transforms.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="!Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
   <Import Project="$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets" Condition="Exists('$(SolutionDir)packages\Saltarelle.Compiler.2.6.2\tools\Saltarelle.Compiler.targets')" />
   <Import Project="$(SolutionDir)packages\Saltarelle.Granular.0.1.4\build\Granular.targets" Condition="Exists('$(SolutionDir)packages\Saltarelle.Granular.0.1.4\build\Granular.targets')" />
