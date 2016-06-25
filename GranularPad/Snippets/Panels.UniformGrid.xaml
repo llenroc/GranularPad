@@ -1,0 +1,23 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UniformGrid FirstColumn="1" Columns="5" Margin="2">
+        <Border Background="#FF03A9F4" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFF5177" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF12C700" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFFB300" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFE040FB" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF616161" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF03A9F4" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFF5177" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF12C700" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFFB300" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFE040FB" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF616161" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF03A9F4" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFF5177" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF12C700" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFFFB300" CornerRadius="2" Margin="2"/>
+        <Border Background="#FFE040FB" CornerRadius="2" Margin="2"/>
+        <Border Background="#FF616161" CornerRadius="2" Margin="2"/>
+    </UniformGrid>
+</Grid>

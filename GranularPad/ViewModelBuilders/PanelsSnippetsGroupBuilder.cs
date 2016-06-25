@@ -18,6 +18,7 @@ namespace GranularPad.ViewModelBuilders
                 new SnippetViewModel("DockPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.DockPanel.xaml"))),
                 new SnippetViewModel("WrapPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.WrapPanel.xaml"))),
                 new SnippetViewModel("Canvas", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.Canvas.xaml"))),
+                new SnippetViewModel("UniformGrid", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.UniformGrid.xaml"))),
             });
         }
     }

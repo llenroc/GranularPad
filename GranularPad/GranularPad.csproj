@@ -274,7 +274,12 @@
       <SubType>Designer</SubType>
     </GranularPage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Snippets\Panels.UniformGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\SampleImage.png" />
   </ItemGroup>
