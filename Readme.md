@@ -7,4 +7,10 @@ Check out the compiled version at [yuvaltz.github.io/granularpad](http://yuvaltz
 
 Build
 -----
-Download the Granular NuGet packages from [yuvaltz.github.io/granular/packages](http://yuvaltz.github.io/granular/packages)
+Initialize **Granular** submodule
+```
+git submodule init
+git submodule update
+```
+
+Build **GranularPad.sln**
