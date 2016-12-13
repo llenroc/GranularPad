@@ -5,7 +5,6 @@ using System.Text;
 using System.Windows.Controls;
 using GranularPad.ViewModels;
 using System.Windows.Threading;
-using System.Xaml;
 using System.Windows.Markup;
 using System.Windows;
 using System.Windows.Media.Animation;
@@ -87,7 +86,7 @@ namespace GranularPad.Views
         {
             try
             {
-                if (mainViewModel.TextContent.IsNullOrWhitespace())
+                if (mainViewModel.TextContent.IsNullOrWhiteSpace())
                 {
                     contentPresenter.Child = null;
                 }

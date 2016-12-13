@@ -1,11 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranularPad", "GranularPad\GranularPad.csproj", "{0E863462-AC4C-4B2E-ABE8-4FFD9BA6351A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Granular", "Granular", "{926C33DD-0A06-4098-9753-5A53FCC79078}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Granular.Web", "Granular.Web", "{20EA2031-D955-4FEF-84F1-F3B66DEC692C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranularPad.Web", "GranularPad.Web\GranularPad.Web.csproj", "{1BED392F-9FA1-4531-BA58-D9E41507506D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Common", "Granular\Granular.Common\Granular.Common.csproj", "{87F1FD58-E233-4183-830A-E9E54BA17D68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Presentation", "Granular\Granular.Presentation\Granular.Presentation.csproj", "{14EC400C-E6B9-499B-9970-57B34AF24A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Presentation.Generic", "Granular\Granular.Presentation.Generic\Granular.Presentation.Generic.csproj", "{FB4FBB48-CACB-49FA-898F-154A8A9233D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Host.Wpf", "Granular\Granular.Host.Wpf\Granular.Host.Wpf.csproj", "{ED2AE8A5-DEC3-4829-93A8-834A8833EC26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Common.Web", "Granular\Granular.Common.Web\Granular.Common.Web.csproj", "{F79EE440-E0C4-43A9-8DDC-33D9ED53E570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Presentation.Web", "Granular\Granular.Presentation.Web\Granular.Presentation.Web.csproj", "{DD58EC80-2C0D-45F3-9CC9-5B1783193306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Presentation.Generic.Web", "Granular\Granular.Presentation.Generic.Web\Granular.Presentation.Generic.Web.csproj", "{21053C1F-6C25-4119-8FD6-0FA73332168E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Granular.Host.Web", "Granular\Granular.Host.Web\Granular.Host.Web.csproj", "{E3353831-9653-4F3A-B0FF-56D179235A43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +41,50 @@ Global
 		{1BED392F-9FA1-4531-BA58-D9E41507506D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BED392F-9FA1-4531-BA58-D9E41507506D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BED392F-9FA1-4531-BA58-D9E41507506D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F1FD58-E233-4183-830A-E9E54BA17D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F1FD58-E233-4183-830A-E9E54BA17D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F1FD58-E233-4183-830A-E9E54BA17D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F1FD58-E233-4183-830A-E9E54BA17D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EC400C-E6B9-499B-9970-57B34AF24A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EC400C-E6B9-499B-9970-57B34AF24A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EC400C-E6B9-499B-9970-57B34AF24A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EC400C-E6B9-499B-9970-57B34AF24A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4FBB48-CACB-49FA-898F-154A8A9233D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4FBB48-CACB-49FA-898F-154A8A9233D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4FBB48-CACB-49FA-898F-154A8A9233D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4FBB48-CACB-49FA-898F-154A8A9233D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2AE8A5-DEC3-4829-93A8-834A8833EC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2AE8A5-DEC3-4829-93A8-834A8833EC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2AE8A5-DEC3-4829-93A8-834A8833EC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2AE8A5-DEC3-4829-93A8-834A8833EC26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79EE440-E0C4-43A9-8DDC-33D9ED53E570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79EE440-E0C4-43A9-8DDC-33D9ED53E570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79EE440-E0C4-43A9-8DDC-33D9ED53E570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79EE440-E0C4-43A9-8DDC-33D9ED53E570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD58EC80-2C0D-45F3-9CC9-5B1783193306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD58EC80-2C0D-45F3-9CC9-5B1783193306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD58EC80-2C0D-45F3-9CC9-5B1783193306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD58EC80-2C0D-45F3-9CC9-5B1783193306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21053C1F-6C25-4119-8FD6-0FA73332168E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21053C1F-6C25-4119-8FD6-0FA73332168E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21053C1F-6C25-4119-8FD6-0FA73332168E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21053C1F-6C25-4119-8FD6-0FA73332168E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3353831-9653-4F3A-B0FF-56D179235A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3353831-9653-4F3A-B0FF-56D179235A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3353831-9653-4F3A-B0FF-56D179235A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3353831-9653-4F3A-B0FF-56D179235A43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87F1FD58-E233-4183-830A-E9E54BA17D68} = {926C33DD-0A06-4098-9753-5A53FCC79078}
+		{14EC400C-E6B9-499B-9970-57B34AF24A4B} = {926C33DD-0A06-4098-9753-5A53FCC79078}
+		{FB4FBB48-CACB-49FA-898F-154A8A9233D1} = {926C33DD-0A06-4098-9753-5A53FCC79078}
+		{ED2AE8A5-DEC3-4829-93A8-834A8833EC26} = {926C33DD-0A06-4098-9753-5A53FCC79078}
+		{F79EE440-E0C4-43A9-8DDC-33D9ED53E570} = {20EA2031-D955-4FEF-84F1-F3B66DEC692C}
+		{DD58EC80-2C0D-45F3-9CC9-5B1783193306} = {20EA2031-D955-4FEF-84F1-F3B66DEC692C}
+		{21053C1F-6C25-4119-8FD6-0FA73332168E} = {20EA2031-D955-4FEF-84F1-F3B66DEC692C}
+		{E3353831-9653-4F3A-B0FF-56D179235A43} = {20EA2031-D955-4FEF-84F1-F3B66DEC692C}
 	EndGlobalSection
 EndGlobal

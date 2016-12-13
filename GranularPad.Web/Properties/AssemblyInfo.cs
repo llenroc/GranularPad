@@ -30,6 +30,7 @@ using Granular.Host;
 [assembly: AssemblyFileVersion("0.1.0.0")]
 
 [assembly: ApplicationHost(typeof(WebApplicationHost))]
-[assembly: PreserveMemberCase(true)]
-[assembly: DefaultMemberReflectability(MemberReflectability.All)]
 
+[assembly: Bridge.Reflectable(Bridge.MemberAccessibility.PublicInstanceProperty)]
+
+[assembly: Granular.Compatibility.AssemblyReference(typeof(Granular.Presentation.Generic.ButtonChrome))]

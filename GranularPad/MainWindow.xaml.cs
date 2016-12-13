@@ -7,8 +7,6 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Markup;
-using System.Xaml;
-using GranularPad.ViewModels;
 
 namespace GranularPad
 {

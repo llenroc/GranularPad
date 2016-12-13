@@ -54,18 +54,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Granular.Common">
-      <HintPath>..\packages\Granular.0.1.4\lib\Granular.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Granular.Host.Wpf">
-      <HintPath>..\packages\Granular.0.1.4\lib\Granular.Host.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Granular.Presentation">
-      <HintPath>..\packages\Granular.0.1.4\lib\Granular.Presentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Granular.Presentation.Generic">
-      <HintPath>..\packages\Granular.0.1.4\lib\Granular.Presentation.Generic.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -95,19 +83,18 @@
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
-    <GranularApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularApplicationDefinition>
-    <GranularPage Include="MainWindow.xaml">
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularPage>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Compatibility\ExceptionExtensions.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -131,7 +118,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,22 +129,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <GranularPage Include="DataTemplates.xaml">
+    <Page Include="DataTemplates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </GranularPage>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <GranularPage Include="Views\MainView.xaml">
+    <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularPage>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <GranularPage Include="Views\SnippetView.xaml">
+    <Page Include="Views\SnippetView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularPage>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Snippets\Panels.StackPanel.xaml">
@@ -167,10 +153,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <GranularPage Include="Views\SnippetsGroupView.xaml">
+    <Page Include="Views\SnippetsGroupView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularPage>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Snippets\Panels.DockPanel.xaml">
@@ -269,10 +255,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <GranularPage Include="Snippets\Controls.Image.xaml">
+    <Page Include="Snippets\Controls.Image.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </GranularPage>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Snippets\Panels.UniformGrid.xaml">
@@ -323,14 +309,26 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Granular\Granular.Common\Granular.Common.csproj">
+      <Project>{87f1fd58-e233-4183-830a-e9e54ba17d68}</Project>
+      <Name>Granular.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Granular\Granular.Host.Wpf\Granular.Host.Wpf.csproj">
+      <Project>{ed2ae8a5-dec3-4829-93a8-834a8833ec26}</Project>
+      <Name>Granular.Host.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Granular\Granular.Presentation.Generic\Granular.Presentation.Generic.csproj">
+      <Project>{fb4fbb48-cacb-49fa-898f-154a8a9233d1}</Project>
+      <Name>Granular.Presentation.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Granular\Granular.Presentation\Granular.Presentation.csproj">
+      <Project>{14ec400c-e6b9-499b-9970-57b34af24a4b}</Project>
+      <Name>Granular.Presentation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)packages\Granular.0.1.4\build\Granular.targets" Condition="Exists('$(SolutionDir)packages\Granular.0.1.4\build\Granular.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Granular.0.1.4\build\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Granular.0.1.4\build\Granular.targets'))" />
-  </Target>
+  <Import Project="$(SolutionDir)BuildTasks\Granular.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
