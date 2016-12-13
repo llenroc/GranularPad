@@ -13,9 +13,9 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Styles and Templates", new []
             {
-                new SnippetViewModel("DataTemplate", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Templates.DataTemplate.xaml"))),
-                new SnippetViewModel("ItemsControl Style", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Styles.ItemsControl.xaml"))),
-                new SnippetViewModel("ControlTemplate", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Templates.ControlTemplate.xaml"))),
+                new SnippetViewModel("DataTemplate", "pack://application:,,,/GranularPad;component/Snippets/Templates.DataTemplate.xaml"),
+                new SnippetViewModel("ItemsControl Style", "pack://application:,,,/GranularPad;component/Snippets/Styles.ItemsControl.xaml"),
+                new SnippetViewModel("ControlTemplate", "pack://application:,,,/GranularPad;component/Snippets/Templates.ControlTemplate.xaml"),
             });
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 using Granular.Extensions;
 
 namespace GranularPad.ViewModels
@@ -13,10 +14,10 @@ namespace GranularPad.ViewModels
         public string Header { get; private set; }
         public string Content { get; private set; }
 
-        public SnippetViewModel(string header, string content)
+        public SnippetViewModel(string header, string absoluteUriString)
         {
             this.Header = header;
-            this.Content = content;
+            this.Content = Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(Granular.Compatibility.Uri.CreateAbsoluteUri(absoluteUriString)));
         }
 
         public void ApplySnippet()

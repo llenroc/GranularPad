@@ -13,7 +13,7 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Others", new[]
             {
-                new SnippetViewModel("GradientBrush", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Media.GradientBrush.xaml"))),
+                new SnippetViewModel("GradientBrush", "pack://application:,,,/GranularPad;component/Snippets/Media.GradientBrush.xaml"),
             });
         }
     }

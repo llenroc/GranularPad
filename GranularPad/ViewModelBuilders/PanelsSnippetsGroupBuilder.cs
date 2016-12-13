@@ -13,12 +13,12 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Panels", new []
             {
-                new SnippetViewModel("StackPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.StackPanel.xaml"))),
-                new SnippetViewModel("Grid", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.Grid.xaml"))),
-                new SnippetViewModel("DockPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.DockPanel.xaml"))),
-                new SnippetViewModel("WrapPanel", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.WrapPanel.xaml"))),
-                new SnippetViewModel("Canvas", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.Canvas.xaml"))),
-                new SnippetViewModel("UniformGrid", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Panels.UniformGrid.xaml"))),
+                new SnippetViewModel("StackPanel", "pack://application:,,,/GranularPad;component/Snippets/Panels.StackPanel.xaml"),
+                new SnippetViewModel("Grid", "pack://application:,,,/GranularPad;component/Snippets/Panels.Grid.xaml"),
+                new SnippetViewModel("DockPanel", "pack://application:,,,/GranularPad;component/Snippets/Panels.DockPanel.xaml"),
+                new SnippetViewModel("WrapPanel", "pack://application:,,,/GranularPad;component/Snippets/Panels.WrapPanel.xaml"),
+                new SnippetViewModel("Canvas", "pack://application:,,,/GranularPad;component/Snippets/Panels.Canvas.xaml"),
+                new SnippetViewModel("UniformGrid", "pack://application:,,,/GranularPad;component/Snippets/Panels.UniformGrid.xaml"),
             });
         }
     }

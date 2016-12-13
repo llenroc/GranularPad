@@ -13,10 +13,10 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Animations", new[]
             {
-                new SnippetViewModel("Easing functions", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Animation.EasingFunctions.xaml"))),
-                new SnippetViewModel("UsingKeyFrames", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Animation.UsingKeyFrames.xaml"))),
-                new SnippetViewModel("Compose", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Animation.Compose.xaml"))),
-                new SnippetViewModel("RepeatForever", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Animation.RepeatForever.xaml"))),
+                new SnippetViewModel("Easing functions", "pack://application:,,,/GranularPad;component/Snippets/Animation.EasingFunctions.xaml"),
+                new SnippetViewModel("UsingKeyFrames", "pack://application:,,,/GranularPad;component/Snippets/Animation.UsingKeyFrames.xaml"),
+                new SnippetViewModel("Compose", "pack://application:,,,/GranularPad;component/Snippets/Animation.Compose.xaml"),
+                new SnippetViewModel("RepeatForever", "pack://application:,,,/GranularPad;component/Snippets/Animation.RepeatForever.xaml"),
             });
         }
     }

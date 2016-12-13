@@ -13,12 +13,12 @@ namespace GranularPad.ViewModelBuilders
         {
             return new SnippetsGroupViewModel("Framework", new[]
             {
-                new SnippetViewModel("Resources", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Resources.xaml"))),
-                new SnippetViewModel("Binding Modes", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.Modes.xaml"))),
-                new SnippetViewModel("Binding RelativeSource", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.RelativeSource.xaml"))),
-                new SnippetViewModel("Binding UpdateTrigger", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Binding.UpdateSourceTrigger.xaml"))),
-                new SnippetViewModel("KeyboardNavigation", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.KeyboardNavigation.xaml"))),
-                new SnippetViewModel("Transforms", Granular.Compatibility.String.FromByteArray(EmbeddedResourceLoader.LoadResourceData(@"/GranularPad;component/Snippets/Framework.Transforms.xaml"))),
+                new SnippetViewModel("Resources", "pack://application:,,,/GranularPad;component/Snippets/Framework.Resources.xaml"),
+                new SnippetViewModel("Binding Modes", "pack://application:,,,/GranularPad;component/Snippets/Framework.Binding.Modes.xaml"),
+                new SnippetViewModel("Binding RelativeSource", "pack://application:,,,/GranularPad;component/Snippets/Framework.Binding.RelativeSource.xaml"),
+                new SnippetViewModel("Binding UpdateTrigger", "pack://application:,,,/GranularPad;component/Snippets/Framework.Binding.UpdateSourceTrigger.xaml"),
+                new SnippetViewModel("KeyboardNavigation", "pack://application:,,,/GranularPad;component/Snippets/Framework.KeyboardNavigation.xaml"),
+                new SnippetViewModel("Transforms", "pack://application:,,,/GranularPad;component/Snippets/Framework.Transforms.xaml"),
             });
         }
     }

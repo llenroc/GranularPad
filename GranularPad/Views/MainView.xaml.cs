@@ -92,7 +92,7 @@ namespace GranularPad.Views
                 }
                 else
                 {
-                    FrameworkElement child = (FrameworkElement)XamlLoader.Load(XamlParser.Parse(mainViewModel.TextContent));
+                    FrameworkElement child = (FrameworkElement)XamlLoader.Load(XamlParser.Parse(mainViewModel.TextContent, new Uri("pack://application:,,,/GranularPad;component/")));
                     child.DataContext = null;
 
                     contentPresenter.Child = child;
