@@ -4,5 +4,4 @@
         Title="GranularPad"
         TextBlock.FontFamily="Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif"
         TextBlock.FontSize="16">
-    <ContentControl Content="{Binding}"/>
 </Window>

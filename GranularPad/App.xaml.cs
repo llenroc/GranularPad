@@ -17,7 +17,7 @@ namespace GranularPad
             MainViewModel viewModel = new MainViewModelBuilder().Build();
 
             MainWindow window = new MainWindow();
-            window.DataContext = viewModel;
+            window.Content = viewModel;
             window.Show();
         }
     }
